@@ -1,0 +1,50 @@
+body {
+	background-color: #d3e2e5;
+}
+
+header {
+	margin: 10px auto;
+	background-color: #4C6C7F;
+	border: 1px solid #263640;
+	box-shadow: 0 0 30px #89c2e5;
+	text-align: center;
+}
+
+header img, .headings {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+}
+h1 {
+	font-size: 35px;
+	font-family: 'Raleway', sans-serif;;
+	color: #ffffff
+}
+
+.motto {
+	font-size: 15px;
+	font-style: italic;
+	font-family: 'Raleway', sans-serif;;
+	color: #ffffff
+}
+
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav a {
+	display: block;
+	padding: 5px;
+	color: #263640;
+	text-decoration: none;
+	border-width:1px;
+	border-style: solid;
+	}
+
+li {
+	text-align: center;
+	background-color: #72A2BF
+}
