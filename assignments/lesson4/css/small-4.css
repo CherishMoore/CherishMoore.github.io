@@ -17,14 +17,20 @@ header img, .headings {
 }
 h1 {
 	font-size: 35px;
-	font-family: 'Raleway', sans-serif;;
+	font-family: 'Raleway', sans-serif;
 	color: #ffffff
+}
+
+h2 {
+	font-size: 25px;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
 }
 
 .motto {
 	font-size: 15px;
 	font-style: italic;
-	font-family: 'Raleway', sans-serif;;
+	font-family: 'Raleway', sans-serif;
 	color: #ffffff
 }
 
@@ -48,3 +54,5 @@ li {
 	text-align: center;
 	background-color: #72A2BF
 }
+
+#responsive-image {  width: 100%;  height: auto; } 
