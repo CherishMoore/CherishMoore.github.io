@@ -56,3 +56,10 @@ li {
 }
 
 #responsive-image {  width: 100%;  height: auto; } 
+
+footer {
+	background-color: #4C6C7F;
+	border: 1px solid #263640;
+	box-shadow: 0 0 30px #89c2e5;
+	text-align: left;
+}
