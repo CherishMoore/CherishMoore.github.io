@@ -55,7 +55,7 @@ li {
 	background-color: #72A2BF
 }
 
-#responsive-image {  width: 100%;  height: auto; } 
+.responsive {  width: 100%;  height: auto; } 
 
 footer {
 	background-color: #4C6C7F;
