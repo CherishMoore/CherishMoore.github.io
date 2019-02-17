@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1">
+    <meta name="description"
+        content="Get current weather conditions for three towns in southeast Idaho and local events/news">
+    <title>Preston 6</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-6.css">
+    <link rel="stylesheet" href="css/large-6.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <img src="images/PartlyCloudy.png" width="120" height="120" alt="Partly Cloudy">
+            <!--<img src="https://cdn1.iconfinder.com/data/icons/Futurosoft%20Icons%200.5.2/128x128/apps/keyboard_layout.png" alt="The world logo">-->
+            <section class="headings">
+                <h1>Forecast Today</h1>
+                <h2 class="motto">Seek adventure through the storms.</h2>
+            </section>
+        </div>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#" title="Home">Home</a></li>
+            <li class="active"><a href="#" title="Preston">Preston</a></li>
+            <li><a href="#" title="Fish Haven">Fish Haven</a></li>
+            <li><a href="#" title="Soda Springs">Soda Springs</a></li>
+            <li><a href="#" title="Storm Center">Storm Center</a></li>
+            <li><a href="#" title="Gallery">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston, Idaho</h2>
+        <picture class="herodiv">
+            <source srcset="images/cit230_image_franklinOriginal_lrg.jpg" media="(min-width: 800px)">
+            <source srcset="images/cit230_image_franklinOriginal_med.jpg"
+                media="(min-width: 400px) and (max-width: 799px)">
+            <source srcset="images/cit230_image_franklinOriginal_sm.jpg" media="(max-width: 399px)">
+            <img src="images/cit230_image_franklinOriginal_lrg.jpg" alt="Sunny Skies in Franklin">
+        </picture>
+        <section class="stats">
+            <h3>Current Weather</h3>
+            <p>Temp: 14&deg;</p>
+            <p>Humidity: 12&percnt;</p>
+            <p>Wind: 8mph SE</p>
+            <p>Mostly Cloudy</p>
+        </section>
+        <div class="tdiv">
+            <h3>Five Day Forecast</h3>
+        </div>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                </tr>
+                <tr>
+                    <td>34&deg; &verbar; 22&deg;</td>
+                    <td>34&deg; &verbar; 23&deg;</td>
+                    <td>38&deg; &verbar; 17&deg;</td>
+                    <td>26&deg; &verbar; 16&deg;</td>
+                    <td>36&deg; &verbar; 23&deg;</td>
+                </tr>
+            </tbody>
+        </table>
+        <picture>
+            <img src="images/Rodeo.jpg" alt="Action photo of the rodeo" class="center">
+        </picture>
+        <h2>That Famous Preston Night Rodeo</h2>
+
+    </main>
+    <footer>
+
+        <p><span id="date"></span>&copy; 2019 Weather Site Cherish Moore Utah <a
+                href="http://www.byui.edu/online">BYU-Idaho</a></p>
+
+    </footer>
+    <script src="script/currentdate.js"></script>
+</body>
+
+</html>
