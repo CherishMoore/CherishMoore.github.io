@@ -80,7 +80,6 @@ nav ul li a:hover {
 nav ul li:active a {
     background-color: #89c2e5;
 }
-
 nav ul.hide {display: none;}
 
 .clearfix:after {
