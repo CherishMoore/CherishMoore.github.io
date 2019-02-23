@@ -13,6 +13,9 @@ header {
 }
 
 header h1 {
+    font-size: 5em;
+    color: #263640;
+    text-shadow: 2px 2px 8px #d3e2e5;
     margin: 0;
 }
 
@@ -44,7 +47,6 @@ h3 {
     font-family: 'Raleway', sans-serif;
 	text-align: center;
 }
-
 
 .motto {
 	font-size: 15px;
@@ -106,9 +108,14 @@ nav ul.hide {display: none;
     margin-top: 50px;
     width: 100%;
 }
- 
 
-main h2 {text-align: center;
+main {
+    padding: 5px;
+}
+
+main h2 {
+    color: #263640;
+    text-align: center;
     font-family: 'Raleway', sans-serif;
     font-size:2rem;
     text-shadow:3px 3px 5px #777;
@@ -122,13 +129,13 @@ main picture.herodiv img {
     margin: auto;
 }
 .stats {
+    font-size: 12px;
     position: absolute;
     display: grid;
-    grid-template-columns: 100px 50px;
+    grid-template-columns: 110px 50px;
     grid-column-gap: 15px;
-	top: 400px;
-    left:200px;
-    font-family: 'Raleway', sans-serif;
+	top: 500px;
+    left:150px;
     color: #ffffff;
     background-color: #4C6C7F;
     opacity: .8;
@@ -137,39 +144,45 @@ main picture.herodiv img {
 	box-shadow: 0 0 30px #fff;
 }
 .stats h3 {
+    font-size: 14px;
+
     grid-column-start: 1;
     grid-column-end: 3;
 }
-.item2 .item4 .item6 {
+.item2 .item4 .item6 .item8 {
     text-align: right;
 }
-.item7 {
+.item9 {
     grid-column-start: 1;
     grid-column-end: 3;
     text-align: center;
 }
 * {box-sizing: border-box;}
+
 .gallery {
-    margin: 0;
-    padding: 0;
     display: grid;
+    padding: 20px;
+    margin-left: 0;
     grid-template-columns: 1fr;
     max-width: 480px;
-    grid-gap: 5px;
+    grid-gap: 20px;
     
 }
 .gallery figure:hover {
-    transition: .5s ease-in-out;
+    transition: .5s ;
     opacity: .5;
     box-shadow: 0 0 25px #263640;
 }
 .gallery figure { 
+    width: 100%;
+    margin-left: 0;
     border: 1px solid #263640;
     border-radius: 15px;
     box-shadow: 2px 2px 5px #263640;
 }
 .gallery figure img { 
     border-radius: 15px 15px 0 0;
+    width: 100%;
 }
 figcaption {
     text-align: center;
@@ -217,8 +230,9 @@ footer {
 footer p {
     padding:0px 20px 0px 20px;
 }
-
-
+footer p span {
+float: right;
+}
 
 * {
     font-family:'Raleway', sans-serif;

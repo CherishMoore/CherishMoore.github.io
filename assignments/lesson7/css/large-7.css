@@ -1,6 +1,9 @@
-@media only screen and (min-width: 1024px) {
-.gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
+@media only screen and (min-width: 64em) {
+    main,
+    .gallery {
+        max-width: 90em;
+    }
+    .gallery {
+        grid-template-columns: auto auto auto;
+    }
 }
