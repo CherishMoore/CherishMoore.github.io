@@ -1,0 +1,46 @@
+@media only screen and (min-width:481px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    footer span {
+        float:right
+    
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+   
+    table {
+      display: none;}
+
+     .tdiv {
+        display: none;}
+
+
+    }
+    @media only screen and (min-width: 700px) {
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    } 
+        
+    nav button {display: none;}
+    
+    nav ul.hide {display: block;}
+    
+    nav ul {margin-left:2%;}
+        
+    nav ul li {float: left;}
+    
+    nav ul li a {
+        border: none;
+        border-right: 1px solid #263640;
+        padding: .8rem 1rem;
+    }
+    }
+    
