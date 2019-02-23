@@ -6,4 +6,7 @@
     .gallery {
         grid-template-columns: auto auto auto;
     }
+    .gallery figure {
+        box-shadow: 2px 2px 5px #263640;
+}
 }
