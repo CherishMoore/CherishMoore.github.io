@@ -1,0 +1,239 @@
+body {
+	background-color: #d3e2e5;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+	margin: 10px auto;
+	background-color: #4C6C7F;
+	border: 1px solid #263640;
+	box-shadow: 0 0 15px #263640;
+	text-align: center;
+}
+
+header h1 {
+    font-size: 5em;
+    color: #263640;
+    text-shadow: 2px 2px 8px #d3e2e5;
+    margin: 0;
+}
+
+header h2 {
+    margin: 0;
+}
+
+header img, .headings {
+	display: inline-block;
+	vertical-align: middle;
+	margin: none;
+}
+h1 {
+	font-size: 35px;
+	font-family: 'Raleway', sans-serif;
+    color: #263640;
+    text-align: center;
+}
+
+h2 {
+    margin: 10px 0px;
+	font-size: 25px;
+	font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding: 25px;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+
+.motto {
+	font-size: 15px;
+	font-style: italic;
+	font-family: 'Raleway', sans-serif;
+	color: #ffffff
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+nav {	
+    display: flex;
+    flex-direction: column;
+    background-color: #4C6C7F;
+    border: 1px solid #263640;
+	box-shadow: 0 0 15px #263640;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #ffffff;
+    border-top: 1px solid #263640;
+    
+}
+nav ul li a:hover {
+    background-color: #263640; 
+}
+nav ul li:active a {
+    background-color: #89c2e5;
+}
+nav ul.hide {display: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*.active {
+    background-color: #89c2e5;
+}*/
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 100%;
+}
+
+main {
+    padding: 5px;
+}
+
+main h2 {
+    color: #263640;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size:2rem;
+    text-shadow:3px 3px 5px #777;
+}
+main article  { max-width: 1300px;
+    margin: auto;
+}
+main picture.herodiv img {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+.stats {
+    font-size: 12px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 110px 50px;
+    grid-column-gap: 15px;
+	top: 500px;
+    left:150px;
+    color: #ffffff;
+    background-color: #4C6C7F;
+    opacity: .8;
+	border: 1px solid #263640;
+	padding: 0 1.5rem;
+	box-shadow: 0 0 30px #fff;
+}
+.stats h3 {
+    font-size: 14px;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item2 .item4 .item6 .item8 {
+    text-align: right;
+}
+.item9 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+* {box-sizing: border-box;}
+
+.gallery {
+    display: grid;
+    padding: 20px;
+    margin-left: 0;
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    grid-gap: 20px;
+    
+}
+.gallery figure:hover {
+    transition: .5s ;
+    opacity: .5;
+    box-shadow: 0 0 25px #263640;
+}
+.gallery figure { 
+    width: 100%;
+    margin-left: 0;
+    border: 1px solid #263640;
+    border-radius: 15px;
+   
+}
+.gallery figure img { 
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+}
+figcaption {
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;
+    color: #263640;
+}
+table {
+    
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  
+  table, td, th {
+    border: 1.5px solid #263640;
+    padding: 20px;
+
+  }
+
+  td {
+    text-align: center;
+    vertical-align: center;
+  }
+
+  th {
+      text-align: center;
+      vertical-align: center;
+      background-color: #4C6C7F;
+      color: white;
+  }
+article img {
+    float: right;
+}
+footer {
+    color: white;
+	background-color: #4C6C7F;
+	border: 1px solid #263640;
+	box-shadow: 0 0 30px #89c2e5;
+    text-align: left;
+}
+
+footer p {
+    padding:0px 20px 0px 20px;
+}
+footer p span {
+float: right;
+}
+
+* {
+    font-family:'Raleway', sans-serif;
+}
