@@ -128,9 +128,7 @@ main picture.herodiv img {
     width: 100%;
     margin: auto;
 }
-fieldset {
-    background-color: #fff;
-}
+
 form fieldset {
     margin: 2rem 0;
     border: 1px solid #263640;
@@ -159,7 +157,7 @@ form label.top input, form label.top select {
     color: #263640;
     width: 100%;
     max-width: 20rem;
-    background-color: #dddddd;
+    background-color: #fff;
 }
 form label.sbs {
     display: block;
