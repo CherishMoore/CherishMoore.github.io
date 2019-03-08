@@ -5,22 +5,28 @@ html {
   }
   
   body {
-    width: 800px;
+    background-color: antiquewhite;
+    width: 1000px;
     margin: 0 auto;
   }
   
   h1, h2 {
-    font-family: 'Faster One', cursive;
+    font-family: 'Bangers', cursive;
+    font-weight: 50;
+    text-align: center;
   }
   
   /* header styles */
   
   h1 {
-    font-size: 4rem;
+    color: #5e2929;
+    font-size: 5rem;
+    text-shadow: 0 0 5px #181855;
     text-align: center;
   }
   
   header p {
+    color: #181855;
     font-size: 1.3rem;
     font-weight: bold;
     text-align: center;
@@ -29,20 +35,28 @@ html {
   /* section styles */
   
   section article {
-    width: 33%;
+    border: 3px solid #181855;
+    border-radius: 15px;
+    background-color: aliceblue;
+    box-shadow: 0 0 10px #181855;
+    width: 30%;
+    margin: 8px;
+    padding: 5px;
     float: left;
   }
   
   section p {
+    color: #181855;
     margin: 5px 0;
   }
   
   section ul {
+    color: #181855;
     margin-top: 0;
   }
   
   h2 {
-    font-size: 2.5rem;
-    letter-spacing: -5px;
+    color: #5e2929;
+    font-size: 2rem;
     margin-bottom: 10px;
   }
