@@ -12,7 +12,7 @@
           display: none;}
         .tdiv {
             display: none;}
-    
+        .townInfo {grid-template-columns: 1fr;
     
         }
         /* Navigation Bar */
@@ -35,5 +35,6 @@
             border-right: 1px solid #263640;
             padding: .8rem 1rem;
         }
+
         }
         
