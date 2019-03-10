@@ -12,9 +12,7 @@
           display: none;}
         .tdiv {
             display: none;}
-        .townInfo {grid-template-columns: 1fr;
-    
-        }
+    }
         /* Navigation Bar */
     @media only screen and (min-width: 700px) {
         nav {
