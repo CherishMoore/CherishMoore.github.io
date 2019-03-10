@@ -209,7 +209,7 @@ form input.submitBtn {
     display: grid;
     padding: 20px;
     margin-left: 0;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto auto auto;
     max-width: 480px;
     grid-gap: 20px;
     
@@ -268,17 +268,21 @@ article img {
 
 .townInfo {
     display: grid;
-    grid-template-columns: auto;
-    padding: 0.2em;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    max-width: 480px;
+    margin-left: 0;
        
     }
     section article {
         background-color: #dddddd;
         color: #263640;
-        border: 4px solid #263640;
+        box-shadow: 0 0 20px #263640;
         padding: 0 10px 0 10px;
         margin: 2em 1em;
-       
+    }
+    section article img {
+        margin: 10px 15px 20px 15px;
     }
     .townInfo h2 { 
         color: #263640;
@@ -287,11 +291,11 @@ article img {
     }
     .townInfo h3 {
         color: #263640;
-        margin: 0.7em;
+        margin: 0.5em;
         text-align: center;
     }
     .townInfo p {
-        margin: 0.2em;
+        margin: 1em;
     }
     .townInfo ul {
         line-height: 1.9em;
