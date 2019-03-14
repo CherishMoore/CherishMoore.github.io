@@ -22,6 +22,21 @@ function showData(jsonObj) {
         var myPara2 = document.createElement('p');
         var myPara3 = document.createElement('p');
         var myList = document.createElement('ul');
+        var myImg = document.createElement('img');
+        
+        if (info[i].name == "Preston") {
+            myImg.src="images/preston.jpg";
+            myImg.alt="Preston, Idaho";
+        }
+        if (info[i].name == "Fish Haven") {
+            myImg.src="images/fish-haven.jpg";
+            myImg.alt="Fish Haven, Idaho";
+        }
+        if (info[i].name == "Soda Springs") {
+            myImg.src="images/soda-springs";
+            myImg.alt="Soda Springs, Idaho";
+        }
+    
 
         myH2.textContent = info[i].name;
         myH3.textContent = 'Motto: ' + info[i].motto;
@@ -36,9 +51,11 @@ function showData(jsonObj) {
         myArticle.appendChild(myPara2);
         myArticle.appendChild(myPara3);
         myArticle.appendChild(myList);
+        myArticle.appendChild(myImg);
 
         section.appendChild(myArticle);
     }
 
 }
-}   
+
+}
