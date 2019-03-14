@@ -12,6 +12,9 @@
           display: none;}
         .tdiv {
             display: none;}
+        .showData {
+            display: inline-block;
+        }
     }
         /* Navigation Bar */
     @media only screen and (min-width: 700px) {
@@ -33,6 +36,9 @@
             border-right: 1px solid #263640;
             padding: .8rem 1rem;
         }
-
+.showData {
+    display: flex;
+    max-width: 64em;
+}
         }
         

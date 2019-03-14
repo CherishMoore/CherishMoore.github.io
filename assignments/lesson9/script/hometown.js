@@ -6,15 +6,15 @@ request.responseType = 'json';
 request.send();
 request.onload = function() {
 var townInfo = request.response;
-showInfo(townInfo);
+showData(townInfo);
 }
 
 function showData(jsonObj) {
     var info = jsonObj['towns'];
 
     for (var i = 0; i < info.length; i++) {
-        if (i === 2) {
-            continue; }
+        if (info[i].name == "Preston" || info[i].name == "Fish Haven" || info[i].name == "Soda Springs") {
+     
         var myArticle = document.createElement('article');
         var myH2 = document.createElement('h2');
         var myH3 = document.createElement('h3');
@@ -41,4 +41,4 @@ function showData(jsonObj) {
     }
 
 }
-        
+}   

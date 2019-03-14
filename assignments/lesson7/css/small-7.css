@@ -174,8 +174,7 @@ main picture.herodiv img {
     box-shadow: 0 0 25px #263640;
 }
 .gallery figure { 
-    width: 100%;
-    margin-left: 0;
+    width: 75%;
     border: 1px solid #263640;
     border-radius: 15px;
    
