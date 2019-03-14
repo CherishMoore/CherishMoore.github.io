@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description"
+        content="Get current weather conditions for three towns in southeast Idaho and local events/news">
+    <title>Forecast Today | Preston</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-10.css">
+    <link rel="stylesheet" href="css/medium-10.css">
+    <link rel="stylesheet" href="css/large-10.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <img src="images/weather-icon.svg" width="200" height="200" alt="Partly Cloudy">
+            <section class="headings">
+                <h1>Forecast Today</h1>
+                <h2 class="motto">Seek adventure through the storms.</h2>
+            </section>
+        </div>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index-10.html" title="Home">Home</a></li>
+            <li><a href="preston-10.html" title="Preston">Preston</a></li>
+            <li><a href="#" title="Fish Haven">Fish Haven</a></li>
+            <li><a href="#" title="Soda Springs">Soda Springs</a></li>
+            <li><a href="stormcenter-10.html" title="Storm Center">Storm Center</a></li>
+            <li><a href="gallery-10.html" title="Gallery">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston, Idaho</h2>
+        <picture class="herodiv">
+            <source srcset="images/cit230_image_franklinOriginal_lrgFranklin.jpg" media="(min-width: 800px)">
+            <source srcset="images/cit230_image_franklinOriginal_medFranklin.jpg"
+                media="(min-width: 400px) and (max-width: 799px)">
+            <source srcset="images/cit230_image_franklinOriginal_smFranklin.jpg" media="(max-width: 399px)">
+            <img src="images/cit230_image_franklinOriginal_lrgFranklin.jpg" alt="Sunny Skies in Franklin">
+        </picture>
+            <section class="stats">
+                <h3>Current Weather</h3>
+                <p class="item1">Temperature High:</p>
+                <p><span id="cc-city"></span> &deg;F</p>
+                <p class="item3">Temperature Low:</p>
+                <p class="item4">14&deg;F</p> 
+                <p class="item5">Wind:</p>
+                <p class="item6">7mph;</p>
+                <p class="item7">Wind Chill:</p>
+                <p class="item8"><span id="windChill"></span></p>
+                <p class="item9">Mostly Cloudy</p>
+            </section>
+        
+        <div class="tdiv">
+            <h3>Five Day Forecast</h3>
+        </div>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                </tr>
+                <tr>
+                    <td>34&deg; &verbar; 22&deg;</td>
+                    <td>34&deg; &verbar; 23&deg;</td>
+                    <td>38&deg; &verbar; 17&deg;</td>
+                    <td>26&deg; &verbar; 16&deg;</td>
+                    <td>36&deg; &verbar; 23&deg;</td>
+                </tr>
+            </tbody>
+        </table>
+        <article>
+            <h2>That Famous Preston Night Rodeo</h2>
+            <picture>
+                <source srcset="images/rodeo-lrg.jpg" media="(min-width: 1100px)">
+                <source srcset="images/rodeo-med.jpg" media="(min-width: 400px) and (max-width: 1099px)">
+                <source srcset="images/rodeo-sm.jpg" media="(max-width: 399px)">
+                <img src="images/rodeo-lrg.jpg" alt="Action photo of the rodeo">
+            </picture>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+                blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
+                ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It
+                is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the
+                all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day
+                however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of
+                Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild
+                Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven
+                versalia, put her initial into the belt and made herself on the way. When she reached the first hills of
+                the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the
+                headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question
+                ran over her cheek, then she continued her way. On her way she met a copy. The copy warned the Little
+                Blind Text, that where it came from it would have been rewritten a thousand times and everything that
+                was left from its origin would be the word "and" and the Little Blind Text should turn around and return
+                to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until
+                a few insidious Copy Writers ambushed her,</p>
+        </article>
+    </main>
+    <footer>
+
+        <p><span id="date"></span><br>&copy; 2019 Weather Site Cherish Moore Utah <a
+                href="http://www.byui.edu/online">BYU-Idaho</a></p>
+
+    </footer>
+    <script src="script/currentdate.js"></script>
+    <script src="script/hamburger.js"></script>
+    <script src="script/windchill.js"></script>
+
+</body>
+
+</html>
