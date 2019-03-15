@@ -49,11 +49,11 @@
             <section class="stats">
                 <h3>Current Weather</h3>
                 <p class="item1">Temperature High:</p>
-                <p><span id="cc-city"></span> &deg;F</p>
+                <p class="item2"><span id="max-city"></span> &deg;F</p>
                 <p class="item3">Temperature Low:</p>
-                <p class="item4">14&deg;F</p> 
+                <p class="item4"><span id="min-city"></span>14&deg;F</p> 
                 <p class="item5">Wind:</p>
-                <p class="item6">7mph;</p>
+                <p class="item6"><span id="wind-city"></span> mph</p>
                 <p class="item7">Wind Chill:</p>
                 <p class="item8"><span id="windChill"></span></p>
                 <p class="item9">Mostly Cloudy</p>
@@ -108,13 +108,15 @@
     </main>
     <footer>
 
-        <p><span id="date"></span><br>&copy; 2019 Weather Site Cherish Moore Utah <a
+        <p><span id="date"></span><br>&copy; 2019 Weather Site Cherish Moore Utah  <a
                 href="http://www.byui.edu/online">BYU-Idaho</a></p>
+                <p><a href="https://openweathermap.org/">Open Weather Map</a></p>
 
     </footer>
     <script src="script/currentdate.js"></script>
     <script src="script/hamburger.js"></script>
     <script src="script/windchill.js"></script>
+    <script src="script/curr-weather.js"></script>
 
 </body>
 

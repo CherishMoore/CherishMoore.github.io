@@ -6,7 +6,9 @@ weatherObj.onload =  function () {
     var weatherData = JSON.parse(weatherObj.responseText);
     console.log(weatherData);
 
-    document.getElementById('cc-city').innerHTML = weatherData.main.temp_max;
+    document.getElementById('max-city').innerHTML = weatherData.main.temp_max;
+    document.getElementById('min-city').innerHTML = weatherData.main.temp_min;
+    document.getElementById('wind-city').innerHTML = weatherData.wind.speed;
 
     
 

@@ -26,7 +26,7 @@ header h2 {
 header img, .headings {
 	display: inline-block;
 	vertical-align: middle;
-	margin: none;
+
 }
 h1 {
 	font-size: 35px;
@@ -178,6 +178,7 @@ form input.submitBtn {
     width: 95%;
     max-width: 20rem;
 }
+
 .stats {
     font-size: 12px;
     position: absolute;
@@ -276,7 +277,7 @@ article img {
 
 .showData {
     display: flex;
-    flex: nowrap;
+    
     max-width: 90%;
     justify-content: center;
     color: #263640;
@@ -316,16 +317,21 @@ footer {
     color: white;
 	background-color: #4C6C7F;
 	border: 1px solid #263640;
-	box-shadow: 0 0 30px #89c2e5;
+	box-shadow: 0 0 30px #263640;
     text-align: center;
     margin-top: 25px;
 }
-
+footer a {
+    color: white;
+}
+footer a:hover {
+    color: #f1f19b;
+}
 footer p {
     padding:0px 20px 0px 20px;
 }
 footer p span {
-    float: center;
+   align-content: center;
 }
 
 * {
