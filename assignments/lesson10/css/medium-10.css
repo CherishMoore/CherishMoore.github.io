@@ -8,7 +8,7 @@
     }
         /* Responsive Table*/
     @media screen and (max-width: 600px) {
-        table {
+        #forecast-table {
           display: none;}
         .tdiv {
             display: none;}
