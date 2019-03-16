@@ -23,6 +23,7 @@ function showData(jsonObj) {
         var myPara3 = document.createElement('p');
         var myList = document.createElement('ul');
         var myImg = document.createElement('img');
+        var myEvents = document.createElement('p');
         
         if (info[i].name == "Preston") {
             myImg.src="images/preston.jpg";
@@ -43,6 +44,8 @@ function showData(jsonObj) {
         myPara1.textContent = 'Year Founded: ' + info[i].yearFounded;
         myPara2.textContent = 'Currrent Population: ' + info[i].currentPopulation;
         myPara3.textContent = 'Average Rainfall: ' + info[i].averageRainfall;
+        myEvents.textContent = 'Events: ' + info[i].events[0];
+
         
 
         myArticle.appendChild(myH2);
@@ -52,6 +55,7 @@ function showData(jsonObj) {
         myArticle.appendChild(myPara3);
         myArticle.appendChild(myList);
         myArticle.appendChild(myImg);
+        myArticle.appendChild(myEvents);
 
         section.appendChild(myArticle);
     }
