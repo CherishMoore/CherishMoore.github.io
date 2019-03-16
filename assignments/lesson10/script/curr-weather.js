@@ -18,7 +18,6 @@ weatherObj.onload =  function () {
 
 function windchill() {
     
-
     var maxTemp = document.getElementById('max-city').innerHTML;
     var minTemp = document.getElementById('min-city').innerHTML;
     var wind = document.getElementById('wind-city').innerHTML;
