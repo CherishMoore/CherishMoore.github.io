@@ -9,17 +9,17 @@ weatherObj.onload =  function () {
     document.getElementById('max-city').innerHTML = weatherData.main.temp_max;
     document.getElementById('min-city').innerHTML = weatherData.main.temp_min;
     document.getElementById('wind-city').innerHTML = weatherData.wind.speed;
-    document.getElementById('desc').innerHTML = weatherData.weather[0].description;
+    document.getElementById('desc').innerHTML = weatherData.weather[0].main;
     document.getElementById('humid').innerHTML = weatherData.main.humidity;
     
 
 }
 
-
 function windchill() {
+
     
-    var maxTemp = document.getElementById('max-city').innerHTML;
-    var minTemp = document.getElementById('min-city').innerHTML;
+    var maxTemp = document.createElement('max-city').innerHTML;
+    var minTemp = document.createElement('min-city').innerHTML;
     var wind = document.getElementById('wind-city').innerHTML;
     var tempF = (maxTemp + minTemp) / 2;
     var speed = Math.pow(wind, 0.16);
