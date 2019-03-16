@@ -30,3 +30,44 @@ function windchill() {
 }
 
 document.getElementById("windChill").innerHTML = windchill();
+
+var forecastObj = new XMLHttpRequest();
+forecastObj.open('GET', 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=ad29c6aa79f2ea1e6701e2107e4be543', true);
+forecastObj.send();
+
+forecastObj.onload = function () {
+  var forecastData = JSON.parse(forecastObj.responseText),
+    forecastTable = document.getElementById('forecast-table'),
+    forecastHeader = document.createElement('tr'),
+    forecastBody = document.createElement('tr');
+
+  forecastData.list.map(function (forecast) {
+    if (forecast.dt_txt.includes('18:00:00')) {
+      var forecastHeaderCell = document.createElement('th'),
+        forecastBodyCell = document.createElement('td'),
+        bodyCellImg = document.createElement('img'),
+        bodyCellTemp = document.createElement('div'),
+        date = new Date(forecast.dt*1000),
+        days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
+        today = days[date.getDay()],
+        icon = forecast.weather[0].icon;
+
+      bodyCellImg.setAttribute('src', 'http://openweathermap.org/img/w/'+ icon +'.png');
+      bodyCellImg.setAttribute('height', 50);
+      bodyCellImg.setAttribute('width', 50);
+      bodyCellImg.setAttribute('alt', icon);
+
+      bodyCellTemp.textContent = Math.round(forecast.main.temp_max);
+      forecastHeaderCell.textContent = today;
+
+      forecastBodyCell.appendChild(bodyCellImg);
+      forecastBodyCell.appendChild(bodyCellTemp);
+
+      forecastHeader.appendChild(forecastHeaderCell);
+      forecastBody.appendChild(forecastBodyCell);
+    }
+  })
+
+  forecastTable.appendChild(forecastHeader);
+  forecastTable.appendChild(forecastBody);
+}
