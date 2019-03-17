@@ -41,7 +41,7 @@ forecastObj.onload = function () {
   var forecastData = JSON.parse(forecastObj.responseText),
     forecastTable = document.getElementById('forecast-table'),
     forecastHeader = document.createElement('tr'),
-    forecastBody = document.createElement('tr');
+    forecastBody = document.createElement('tr'); 
 
   forecastData.list.map(function (forecast) {
     if (forecast.dt_txt.includes('18:00:00')) {
