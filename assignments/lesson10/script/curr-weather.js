@@ -31,6 +31,8 @@ function windchill() {
 
 document.getElementById("windChill").innerHTML = windchill();
 
+
+
 var forecastObj = new XMLHttpRequest();
 forecastObj.open('GET', 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=ad29c6aa79f2ea1e6701e2107e4be543', true);
 forecastObj.send();
