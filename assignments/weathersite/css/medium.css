@@ -1,0 +1,44 @@
+    /*Gallery Grid*/
+    @media only screen and (min-width: 37.5em) {
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 64em;
+        }
+    }
+        /* Responsive Table*/
+    @media screen and (max-width: 600px) {
+        #forecast-table {
+          display: none;}
+        .tdiv {
+            display: none;}
+        .showData {
+            display: inline-block;
+        }
+    }
+        /* Navigation Bar */
+    @media only screen and (min-width: 700px) {
+        nav {
+            flex-direction: row;
+            justify-content: center;
+        } 
+            
+        nav button {display: none;}
+        
+        nav ul.hide {display: block;}
+        
+        nav ul {margin-left:2%;}
+            
+        nav ul li {float: left;}
+        
+        nav ul li a {
+            border: none;
+            border-right: 1px solid #263640;
+            padding: .8rem 1rem;
+        }
+.showData {
+    display: flex;
+    max-width: 64em;
+}
+        }
+        

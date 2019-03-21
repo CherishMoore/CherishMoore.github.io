@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pictures from the areas of Soda Springs, Fish Haven and Preston, Idaho">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forecast Today | Storm Center</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="images/weather-icon.svg" width="200" height="200" alt="Partly Cloudy">
+            <section class="headings">
+                <h1>Forecast Today</h1>
+                <h2 class="motto">Seek adventure through the storms.</h2>
+            </section>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="homepage.html" title="Home">Home</a></li>
+            <li><a href="preston.html" title="Preston">Preston</a></li>
+            <li><a href="fishhaven.html" title="Fish Haven">Fish Haven</a></li>
+            <li><a href="sodasprings.html" title="Soda Springs">Soda Springs</a></li>
+            <li><a href="stormcenter.html" title="Storm Center">Storm Center</a></li>
+            <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Storm Center</h2>
+        <p>To report a storm in your area, please fill out and submit this form.</p>
+        <form method="GET" action="thankyou.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">First Name* <input type="text" name="fname" pattern="[A-Za-z ]{5,}" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" pattern="[A-Za-z ]{5,}" required></label>
+                <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Zipcode <input type="number" name="zipcode" required></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com"
+                        required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="top">Storm Date <input type="date" name="sdate"></label>
+                <label class="top">Storm Region <select name="region">
+                        <option value="">Select Region</option>
+                        <option value="preston">Preston</option>
+                        <option value="fishHaven">Fish Haven</option>
+                        <option value="sodaSprings">Soda Springs</option>
+                    </select>
+                </label>
+                <label class="top">Storm Type <input list="stormtype" name="sttype" placeholder="Hail, Snow etc.">
+                    <datalist id="stormtype">
+                        <option value="Thunderstorm"></option>
+                        <option value="Hail"></option>
+                        <option value="Flash Flood"></option>
+                        <option value="Blizzard"></option>
+                        <option value="Tornado"></option>
+                    </datalist></label>
+                <label for="rating" class="sbs">Severity of Storm (1-10)</label>
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)"
+                    onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span>
+                <div>Are You in Danger?</div>
+                <label class="sbs"><input type="radio" name="danger" value="yes">Yes</label>
+                <label class="sbs"><input type="radio" name="danger" value="maybe">Maybe</label>
+                <label class="sbs"><input type="radio" name="danger" value="no">No</label>
+            </fieldset>
+            <fieldset>
+                <legend>Comments</legend>
+                <label class="top"><textarea name="comments" rows="5" cols="40"></textarea></label>
+            </fieldset>
+
+
+            <input type="submit" value="Report My Storm" class="submitBtn">
+        </form>
+    </main>
+    <footer>
+
+        <p><span id="date"></span><br>&copy; 2019 Weather Site Cherish Moore Utah <a
+                href="http://www.byui.edu/online">BYU-Idaho</a></p>
+
+    </footer>
+    <script src="script/currentdate.js"></script>
+    <script src="script/hamburger.js"></script>
+    <script src="script/rating.js"></script>
+    <script src="script/windchill.js"></script>
+</body>
+
+</html>
