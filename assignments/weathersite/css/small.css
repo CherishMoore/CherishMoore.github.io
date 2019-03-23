@@ -89,9 +89,7 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #263640; 
 }
-nav ul li:active a {
-    background-color: #89c2e5;
-}
+
 nav ul.hide {display: none;
 }
 
@@ -100,10 +98,10 @@ nav ul.hide {display: none;
     display: table;
     clear: both;
 }
-/*.active {
-    background-color: #89c2e5;
+.active {
+    background-color: #263640;
 }
-
+/*
 .center {
     display: block;
     margin-left: auto;
@@ -254,8 +252,6 @@ figcaption {
 }
 
 #forecast-table {
-  
-
     border-collapse: collapse;
     margin-left: 110px;
 }
@@ -322,6 +318,21 @@ article img {
     }
     .showData ul {
         line-height: 1.9em;
+    }
+    .contact {
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: 110px;
+    }
+    .contact li {
+        list-style-type: none;
+    }
+
+    .map {
+        margin: 0px 15px 40px 0px;
+    }
+    .address {
+        float: right;
     }
 footer {
     color: white;

@@ -18,13 +18,11 @@
 
     <header>
         <div>
-            <a href="homepage.html">
-                <img src="images/weather-icon.svg" width="200" height="200" alt="Partly Cloudy">
-                <section class="headings">
-                    <h1>Forecast Today</h1>
-                    <h2 class="motto">Seek adventure through the storms.</h2>
-                    <a />
-                </section>
+            <img src="images/weather-icon.svg" width="200" height="200" alt="Partly Cloudy">
+            <section class="headings">
+                <h1>Forecast Today</h1>
+                <h2 class="motto">Seek adventure through the storms.</h2>
+            </section>
         </div>
     </header>
 
@@ -33,7 +31,7 @@
         <ul id="primaryNav" class="hide">
             <li><a href="homepage.html" title="Home">Home</a></li>
             <li><a href="preston.html" title="Preston">Preston</a></li>
-            <li><a href="fishhaven.html" title="Fish Haven">Fish Haven</a></li>
+            <li><a class="active" href="fishhaven.html" title="Fish Haven">Fish Haven</a></li>
             <li><a href="sodasprings.html" title="Soda Springs">Soda Springs</a></li>
             <li><a href="stormcenter.html" title="Storm Center">Storm Center</a></li>
             <li><a href="gallery.html" title="Gallery">Gallery</a></li>
@@ -42,11 +40,10 @@
     <main>
         <h2>Fish Haven, Idaho</h2>
         <picture class="herodiv">
-            <source srcset="images/cit230_image_franklinOriginal_lrgFranklin.jpg" media="(min-width: 800px)">
-            <source srcset="images/cit230_image_franklinOriginal_medFranklin.jpg"
-                media="(min-width: 400px) and (max-width: 799px)">
-            <source srcset="images/cit230_image_franklinOriginal_smFranklin.jpg" media="(max-width: 399px)">
-            <img src="images/cit230_image_franklinOriginal_lrgFranklin.jpg" alt="Sunny Skies in Franklin">
+            <source srcset="images/boat-hero-lrg.jpg" media=(min-width: 800px)">
+            <source srcset="images/boat-hero-med.jpg" media="(min-width: 400px) and (max-width: 799px)">
+            <source srcset="images/boat-hero-sm.jpg" media="(max-width: 399px)">
+            <img src="images/boat-hero-lrg.jpg" alt="Boat in the woods by Maverick Ocean">
 
             <section class="stats">
                 <h3>Current Weather</h3>
@@ -70,41 +67,37 @@
         </div>
 
         <article>
-            <h2>That Famous Preston Night Rodeo</h2>
+            <h2>Hometwon Pride At It's Fullest</h2>
             <picture>
-                <source srcset="images/rodeo-lrg.jpg" media="(min-width: 1100px)">
-                <source srcset="images/rodeo-med.jpg" media="(min-width: 400px) and (max-width: 1099px)">
-                <source srcset="images/rodeo-sm.jpg" media="(max-width: 399px)">
-                <img src="images/rodeo-lrg.jpg" alt="Action photo of the rodeo">
+                <source srcset="images/sunflower-large.jpg" media="(min-width: 1100px)">
+                <source srcset="images/sunflower-medium.jpg" media="(min-width: 400px) and (max-width: 1099px)">
+                <source srcset="images/sunflower-small.jpg" media="(max-width: 399px)">
+                <img src="images/sunflower-large.jpg" alt="Girl standing in front of sunflowers and corn field">
             </picture>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-                blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
-                ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It
-                is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the
-                all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day
-                however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of
-                Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild
-                Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven
-                versalia, put her initial into the belt and made herself on the way. When she reached the first hills of
-                the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the
-                headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question
-                ran over her cheek, then she continued her way. On her way she met a copy. The copy warned the Little
-                Blind Text, that where it came from it would have been rewritten a thousand times and everything that
-                was left from its origin would be the word "and" and the Little Blind Text should turn around and return
-                to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until
-                a few insidious Copy Writers ambushed her,</p>
+            <p>Rosie Loore proudly stands in front of her family farm after winning blue ribbons at the county fair for
+                her corn entry. She has spent her summer working hard with her father to plant, care for, and harvest a
+                a beautiful crop of corn this season.<br> "I like getting my hands dirty and working hard" she says. "It
+                makes me feel good when I see the seeds start to sprout and know that I am on my way to harvesting
+                something that will help other people."<br> Rosie is an 8th grader and has big plans to raise some pigs
+                next year. She wants to enter them in the fair also. When she's not working on the farm she enjoys
+                playing soccer and loves listening to music.</p>
         </article>
     </main>
     <section class="contact">
         <div>
             <ul>
                 <li>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.77385344583!2d-111.9153444655827!3d42.09974162638001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1553093613241"
-                        width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123868.5784945938!2d-111.51518308199749!3d42.03475439959685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish+Haven%2C+ID+83287!5e0!3m2!1sen!2sus!4v1553261794733"
+                        width="200" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </li>
+                <li>Forecast Today<br>
+                    123 Street<br>
+                    Fish Haven, Idaho<br>
+                    someemailaddress@some.com</li>
             </ul>
         </div>
+
     </section>
     <footer>
 
