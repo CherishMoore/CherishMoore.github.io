@@ -40,28 +40,28 @@
     <main>
         <h2>Fish Haven, Idaho</h2>
         <picture class="herodiv">
-            <source srcset="images/boat-hero-lrg.jpg" media=(min-width: 800px)">
+            <source srcset="images/boat-hero-lrg.jpg" media="(min-width: 800px)">
             <source srcset="images/boat-hero-med.jpg" media="(min-width: 400px) and (max-width: 799px)">
             <source srcset="images/boat-hero-sm.jpg" media="(max-width: 399px)">
             <img src="images/boat-hero-lrg.jpg" alt="Boat in the woods by Maverick Ocean">
-
-            <section class="stats">
-                <h3>Current Weather</h3>
-                <p class="item12">Current Temp: </p>
-                <p class="item13"><span id="curr-city"></span> &deg;F</p>
-                <p class="item1">High: </p>
-                <p class="item2"><span id="max-city"></span> &deg;F</p>
-                <p class="item3">Low:</p>
-                <p class="item4"><span id="min-city"></span> &deg;F</p>
-                <p class="item7">Wind Chill:</p>
-                <p class="item8"><span id="windChill"></span></p>
-                <p class="item10">Humidity:</p>
-                <p class="item11"><span id="humid"></span></p>
-                <p class="item5">Wind:</p>
-                <p class="item6"><span id="wind-city"></span> mph</p>
-                <p class="item9"><span id="desc"></span></p>
-            </section>
         </picture>
+        <section class="stats">
+            <h3>Current Weather</h3>
+            <p class="item12">Current Temp: </p>
+            <p class="item13"><span id="curr-city"></span> &deg;F</p>
+            <p class="item1">High: </p>
+            <p class="item2"><span id="max-city"></span> &deg;F</p>
+            <p class="item3">Low:</p>
+            <p class="item4"><span id="min-city"></span> &deg;F</p>
+            <p class="item7">Wind Chill:</p>
+            <p class="item8"><span id="windChill"></span></p>
+            <p class="item10">Humidity:</p>
+            <p class="item11"><span id="humid"></span></p>
+            <p class="item5">Wind:</p>
+            <p class="item6"><span id="wind-city"></span> mph</p>
+            <p class="item9"><span id="desc"></span></p>
+        </section>
+
         <div id="forecast-table">
             <h3>Five Day Forecast</h3>
         </div>
@@ -69,8 +69,8 @@
         <article>
             <h2>Hometwon Pride At It's Fullest</h2>
             <picture>
-                <source srcset="images/sunflower-large.jpg" media="(min-width: 1100px)">
-                <source srcset="images/sunflower-medium.jpg" media="(min-width: 400px) and (max-width: 1099px)">
+                <source srcset="images/sunflower-large.jpg" media="(min-width: 800px)">
+                <source srcset="images/sunflower-medium.jpg" media="(min-width: 400px) and (max-width: 799px)">
                 <source srcset="images/sunflower-small.jpg" media="(max-width: 399px)">
                 <img src="images/sunflower-large.jpg" alt="Girl standing in front of sunflowers and corn field">
             </picture>
@@ -82,25 +82,25 @@
                 next year. She wants to enter them in the fair also. When she's not working on the farm she enjoys
                 playing soccer and loves listening to music.</p>
         </article>
-    
-    <section class="contact">
-            <h2>Contact Information:</h2>
-        <div>
-            <ul>
-                <li>
-                    <iframe class="map"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123868.5784945938!2d-111.51518308199749!3d42.03475439959685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish+Haven%2C+ID+83287!5e0!3m2!1sen!2sus!4v1553261794733"
-                        width="200" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </li>
-                <li>Forecast Today<br>
-                    123 Street<br>
-                    Fish Haven, Idaho<br>
-                    someemailaddress@some.com</li>
-            </ul>
-        </div>
 
-    </section>
-</main>
+        <section class="contact">
+            <h2>Contact Information:</h2>
+            <div>
+                <ul>
+                    <li>
+                        <iframe class="map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123868.5784945938!2d-111.51518308199749!3d42.03475439959685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish+Haven%2C+ID+83287!5e0!3m2!1sen!2sus!4v1553261794733"
+                            width="200" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </li>
+                    <li>Forecast Today<br>
+                        123 Street<br>
+                        Fish Haven, Idaho<br>
+                        someemailaddress@some.com</li>
+                </ul>
+            </div>
+
+        </section>
+    </main>
     <footer>
 
         <p><span id="date"></span><br>&copy; 2019 Weather Site Cherish Moore Utah <a
