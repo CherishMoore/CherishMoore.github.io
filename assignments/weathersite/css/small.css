@@ -280,10 +280,16 @@ article img {
     box-shadow: #263640 0 0 10px;
     margin: 0 0 10px 15px;
 }
-
+.eventData {
+    display: flex;
+    max-width: 90%;
+    justify-content: center;
+    color: #263640;
+    margin: auto;
+    text-align: left;
+}
 .showData {
     display: flex;
-    
     max-width: 90%;
     justify-content: center;
     color: #263640;
@@ -319,6 +325,9 @@ article img {
     .showData ul {
         line-height: 1.9em;
     }
+    #billy {
+        max-width: 1200px;
+    }
     .contact {
         display: flex;
         flex-flow: row wrap;
@@ -331,9 +340,7 @@ article img {
     .map {
         margin: 0px 15px 40px 0px;
     }
-    .address {
-        float: right;
-    }
+    
 footer {
     color: white;
 	background-color: #4C6C7F;
