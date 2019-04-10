@@ -1,7 +1,7 @@
 {
   "temples": [
     {
-      "name": "Provo City Center",
+      "name": "Payson",
       "address": {
         "street": "1494 S 930 W",
         "city": "Payson, Utah",
@@ -14,16 +14,7 @@
         "No cafeteria available",
         "No patron housing available",
         "Distribution center nearby"
-      ],
-      "history": {
-        "announced": "25 January 2010",
-        "groundbreaking": "8 October 2011",
-        "dedicated": "7 June 2015"
-      },
-      "ordinanceSchedule": ,
-      "sessionSchedule": ,
-      "closureSchedule": ,
-    },
-    
+      ]
+}
   ]
 }
