@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="The Temple Inn & Suites offer full-time temple missionsaries suite accommodations at our hotel.">"
     <title>Temple Inn and Suites | Temples</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
@@ -30,9 +31,30 @@
     </nav>
 
     <img class="headImg" src="images/salt-lake-temple-doorknobs.jpg" alt="Brass Doorknobs on the Salt Lake City Temple">
-    <h2>Temple Missionaries</h2>
-    <p>Temple Inn & Suites offers full-time temple missionaries of The Church of Jesus Christ of Latter-Day Saints
-        living accommodations for the duration of their mission calling.</p>
+    <div class="container">
+        <h2>Temple Missionaries</h2>
+        <section id="mission">
+            <div class="left-column">
+                <p>Temple Inn & Suites offers full-time temple missionaries of The Church of Jesus Christ of Latter-Day
+                    Saints living accommodations for the duration of their mission calling. Please fill out this form to
+                    request information about our Temple Missionary Suites.</p>
+            </div>
+            <div class="right-column">
+                <form method="GET" action="quest.html">
+                    <fieldset>
+                        <legend>Request Information</legend>
+                        <label class="top">Full Name <input type="text" name="fname" pattern="[A-Za-z ]{5,}"
+                                required></label>
+                        <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"
+                                required></label>
+                        <label class="top">Questions or Comments<textarea name="comments" rows="10"
+                                cols="30"></textarea></label>
+                    </fieldset>
+                    <input type="submit" value="Request Information" class="submitBtn">
+                </form>
+            </div>
+        </section>
+    </div>
     <footer>
         <p>&copy; 2019 Temple Inn & Suites</p>
     </footer>

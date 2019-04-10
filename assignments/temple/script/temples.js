@@ -42,8 +42,7 @@ function showData(jsonObj) {
             myImg.alt="Preston, Idaho";
         }
 
-        myH2.textContent = 
-        myH3.textContent = info[i].name;
+        myH2.textContent = info[i].name;
         myPara1.textContent = 'Year Founded: ' + info[i].yearFounded;
         myPara2.textContent = 'Currrent Population: ' + info[i].currentPopulation;
         myPara3.textContent = 'Average Rainfall: ' + info[i].averageRainfall;
