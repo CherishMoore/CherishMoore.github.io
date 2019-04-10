@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple Inn and Suites | Contact</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<header>
+    <h1>TEMPLE INN & SUITES</h1>
+    <p class="conthd">1-801-555-5555 | templeinn&suites@gmail.com</p>
+</header>
+
+<body>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="homepage.html" title="Temple Inn & Suites | Home">Home</a></li>
+            <li><a href="temples.html" title="Temple Inn & Suites | Temples">Temples</a></li>
+            <li><a href="services.html" title="Temple Inn & Suites | Services">Services</a></li>
+            <li><a href="reservations.html" title="Temple Inn & Suites | Reservations">Reservations</a></li>
+            <li><a class="active" href="contact.html" title="Temple Inn & Suites | Contact">Contact</a></li>
+
+        </ul>
+    </nav>
+
+    <img class="headImg" src="images/salt-lake-temple-doorknobs.jpg" alt="Brass Doorknobs on the Salt Lake City Temple">
+    <div class="container">
+        <h2>Contact</h2>
+        <p>We are happy to answer any questions you may have.</p>
+        <div>
+            <section id="first-row">
+                <div class="left-column">
+                    <form method="GET" action="quest.html">
+                        <fieldset>
+                            <legend>Contact Information</legend>
+                            <label class="top">Full Name <input type="text" name="fname" pattern="[A-Za-z ]{5,}"
+                                    required></label>
+                            <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"
+                                    required></label>
+                            <label class="top">Questions or Comments<textarea name="comments" rows="10"
+                                    cols="30"></textarea></label>
+                        </fieldset>
+                        <input type="submit" value="Submit Questions" class="submitBtn">
+                    </form>
+                </div>
+                <div class="right-column">
+                    <p id="address">Temple Inn & Suites<br>4800 Montgomery Ln<br>#300<br>Bethesda, MD<br>20814</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4048370284813!2d-77.09772048526075!3d38.98325594948491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1554675509716!5m2!1sen!2sus"
+                        width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                </div>
+            </section>
+
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2019 Temple Inn & Suites</p>
+    </footer>
+    <script src="script/menu.js"></script>
+</body>
+
+</html>

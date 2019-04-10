@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple Inn and Suites | Reservations</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Italianno|Quattrocento|Raleway" rel="stylesheet">
+</head>
+<header>
+    <h1>TEMPLE INN & SUITES</h1>
+    <p class="conthd">1-801-555-5555 | templeinn&suites@gmail.com</p>
+</header>
+
+<body>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="homepage.html" title="Temple Inn & Suites | Home">Home</a></li>
+            <li><a href="temples.html" title="Temple Inn & Suites | Temples">Temples</a></li>
+            <li><a href="services.html" title="Temple Inn & Suites | Services">Services</a></li>
+            <li><a class="active" href="reservations.html" title="Temple Inn & Suites | Reservations">Reservations</a></li>
+            <li><a href="contact.html" title="Temple Inn & Suites | Contact">Contact</a></li>
+
+        </ul>
+    </nav>
+
+    <img class="headImg" src="images/salt-lake-temple-doorknobs.jpg" alt="Brass Doorknobs on the Salt Lake City Temple">
+    <div class="container">
+        <h2>Reservations</h2>
+        <p>For availability, please complete and submit.</p>
+        <form method="GET" action="avail-check.html">
+            <div>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">First Name <input type="text" name="fname" pattern="[A-Za-z ]{3,}"" required></label>
+                <label class="top">Last Name <input type="text" name="lname" pattern="[A-Za-z ]{3,}" required></label>
+                <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">State/Country <input type="text" name="state" pattern="[A-Za-z ]{3,}"
+                        required></label>
+                <label class="top">Zipcode <input type="number" name="zipcode" required></label>
+                <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"
+                        required></label>
+            </fieldset>
+            </div>
+            <div>
+            <fieldset>
+                <legend>Accommodations</legend>
+                <label class="top">Date <input type="date" name="sdate" required></label>
+                <!--<label class="top">Location <select name="location">
+                        <option value="">Select Location</option>
+                        <option value="payson">Payson</option>
+                        <option value="orlando">Orlando</option>
+                        <option value="hawaii">Hawaii</option>
+                        <option value="san diego">San Diego</option>
+                </label>-->
+                <label class="top">Rooms <input type="number" name="rooms" required></label>
+                <label class="top">Comments<textarea name="comments" rows="5" cols="30"></textarea></label>
+            </fieldset>
+            </div>
+            <div>
+            <input type="submit" value="Check Availability" class="submitBtn">
+            </div>
+        </form>
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2019 Temple Inn & Suites</p>
+    </footer>
+    <script src="script/menu.js"></script>
+</body>
+
+</html>
