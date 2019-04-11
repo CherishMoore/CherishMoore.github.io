@@ -30,11 +30,11 @@ h3 {
     background-image: linear-gradient(#cfd1c7, #ffffff);
 }
 #logo {
-    position: absolute;
-    width: 40px;
+    float: left;
+    width: 100px;
     padding: 0px;
-    margin-left: 40px;
-    margin-top: -50px;
+    margin: 0 20px;
+    
   }
   .conthd {
       font-size: 1em;
@@ -101,6 +101,11 @@ nav ul.hide {
     margin-left: auto;
     margin-right: auto;
     width: 75%;
+}
+.recptImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .weather {
     position: absolute;
@@ -188,17 +193,23 @@ section a {
     width: 45%;
     flex: 1 0 15em;
     margin: .5em;
+    min-width: 275px;
   }
   #first-row, #second-row, #ammenities, #specServ, #mission {
     display: flex;
     flex-flow: row wrap;
-    align-items: left;
+    align-items: center;
     justify-content: center;
+    margin: 0 5px;
+  }
+  .about {
+      text-align: justify;
   }
   #img1, #img2 {
     width: 450px;
     border-radius: 10px;
     box-shadow: 0 0 10px #354118;
+    margin-top: 25px;
 }
 #mission .left-column p {
     font-size: 1.8em;
@@ -212,10 +223,21 @@ section a {
     list-style-type: none;
     text-align: center;
   }
+  #temple-video {
+      display:flex;
+      justify-content: center;
+      margin-top: 25px;
+  }
   footer {
-    display: flex;
+    
     background-image: linear-gradient(#cfd1c7, #ffffff);
     padding: 15px 0px;
     margin-top: 40px;
   }
-  
+  #copy {
+     font-size: 1em;
+  }
+  footer p {
+      margin: 10px 50px;
+      font-size: .8em;
+  }
