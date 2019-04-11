@@ -96,8 +96,25 @@ nav ul.hide {
     color: #354118;
     font-family: 'Quattrocento', serif;
 }
+.tmplMain {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+.weather {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: 5px;
+    margin-left: 5px;
+	border: 1px solid #354118;
+	padding:  1rem;
+    box-shadow: 0 0 30px #fff;
+    font-size: smaller;
+    color: #ffffff;
+}
 #address {
-    font-size: 1em;
+    font-size: 1.5em;
     color: #354118;
     text-align: left;
     margin-top: 0;
@@ -133,7 +150,7 @@ form fieldset {
 .submitBtn {
     border: none;
     background-color: #899071;
-    color: #f3eddf;
+    color: #ffffff;
     border-radius: .5rem;
     padding: .75rem 1.5rem;
     margin: 1rem;
@@ -143,7 +160,7 @@ form fieldset {
 .reserveBtn {
     border: none;
     background-color: #899071;
-    color: #f3eddf;
+    color: #ffffff;
     border-radius: .5rem;
     padding: .75rem 1.5rem;
     margin: auto;
@@ -168,7 +185,7 @@ section a {
     box-shadow: 0 0 10px #354118;
 }
 .right-column, .left-column {
-    width: 48%;
+    width: 45%;
     flex: 1 0 15em;
     margin: .5em;
   }
@@ -187,7 +204,7 @@ section a {
     font-size: 1.8em;
 }
   #ammenities, p { 
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: #354118;
     font-family: 'Quattrocento', serif;
   }

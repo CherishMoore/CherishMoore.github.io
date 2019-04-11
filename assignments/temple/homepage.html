@@ -56,23 +56,27 @@
                 <img id="img1" src="images/family-history.jpg" alt="Missionary helping in family history">
             </div>
         </section>
-        <section id="second-row">
-            <div class="left-column">
-                <img id="img2" src="images/provo-city-center-2.jpg" alt="Provo City Center Temple">
-            </div>
-            <div class="right-column">
-                <h3>
-                    Provo City Center
-                </h3>
-                <p>
-                    The Provo City Center Temple is located in Provo, Utah. </p>
-            </div>
+        <section>
+            <h3>Provo City Center Temple</h3>
+            <div class="weather">
+                    <p>Current Weather</p>
+                        <p><span id="curr-city"></span> &deg;F</p>
+                        <p><span id="desc"></span></p>
+                </div>
+                <picture class="tmplMain">
+                        <source srcset="images/provo-city-center-2-lrg.jpg" media="(min-width: 800px)">
+                        <source srcset="images/provo-city-center-2-med.jpg"
+                            media="(min-width: 400px) and (max-width: 799px)">
+                        <source srcset="images/provo-city-center-2-sm.jpg" media="(max-width: 399px)">
+                        <img src="images/provo-city-center-2-lrg.jpg" alt="Provo City Center Temple">
+                    </picture>
         </section>
     </div>
     <footer>
         <p>&copy; 2019 Temple Inn & Suites</p>
     </footer>
     <script src="script/menu.js"></script>
+    <script src="script/provo-weather.js"></script>
 </body>
 
 </html>

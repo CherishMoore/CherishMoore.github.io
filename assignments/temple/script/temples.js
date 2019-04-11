@@ -1,5 +1,5 @@
 var section = document.querySelector('section');
-var requestURL = 'https://CherishMoore.github.io/assignments/temple/temple-data.json';
+var requestURL = 'https://assignments/temple/temple-data.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -23,30 +23,30 @@ function showData(jsonObj) {
         var myPara3 = document.createElement('p');
         var myList = document.createElement('ul');
         var myImg = document.createElement('img');
-        var myEvents = document.createElement('p');
+        
         
         if (info[i].name == "Payson") {
-            myImg.src="images/holding-hands.temple.jpg";
-            myImg.alt="Holding Hands at the Temple";
+            myImg.src="images/payson-temple-med.jpg";
+            myImg.alt="Payson, Utah Temple";
         }
         if (info[i].name == "Laie") {
-            myImg.src="images/fish-haven.jpg";
-            myImg.alt="Fish Haven, Idaho";
+            myImg.src="images/laie-temple-med";
+            myImg.alt="Laie, Hawaii Temple";
         }
         if (info[i].name == "Orlando") {
-            myImg.src="images/soda-springs.jpg";
-            myImg.alt="Soda Springs, Idaho";
+            myImg.src="images/orlando-temple-med.jpg";
+            myImg.alt="Orlando, Florida Temple";
         }
         if (info[i].name == "San Diego") {
-            myImg.src="images/preston.jpg";
-            myImg.alt="Preston, Idaho";
+            myImg.src="images/san-diego-temple-med.jpg";
+            myImg.alt="San Diego, California Temple";
         }
 
         myH2.textContent = info[i].name;
-        myPara1.textContent = 'Year Founded: ' + info[i].yearFounded;
-        myPara2.textContent = 'Currrent Population: ' + info[i].currentPopulation;
-        myPara3.textContent = 'Average Rainfall: ' + info[i].averageRainfall;
-        myEvents.textContent = 'Events: ' + info[i].events[0];
+        myPara1.textContent = info[i].address;
+        myPara2.textContent = info[i].telephone;
+        myList.textContent = info[i].services[0];
+      
 
         
 
@@ -57,7 +57,7 @@ function showData(jsonObj) {
         myArticle.appendChild(myPara3);
         myArticle.appendChild(myList);
         myArticle.appendChild(myImg);
-        myArticle.appendChild(myEvents);
+        
 
         section.appendChild(myArticle);
     }
