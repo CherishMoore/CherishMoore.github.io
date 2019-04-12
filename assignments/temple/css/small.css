@@ -141,7 +141,7 @@ legend {
 }
 form fieldset {
     display: flex;
-    flex-direction: column;
+    flex-direction: column wrap;
     margin: 1rem;
     border: 1px solid #899071;
     border-radius: 5px;
@@ -226,7 +226,7 @@ section a {
     margin-top: 25px;
 }
 #mission .left-column p {
-    font-size: 1.8em;
+    font-size: 1.4em;
 }
   #ammenities, p { 
     font-size: 1.3rem;

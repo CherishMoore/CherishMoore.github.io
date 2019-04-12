@@ -56,14 +56,20 @@
             <fieldset>
                 <legend>Accommodations</legend>
                 <label class="top">Date <input type="date" name="sdate" required></label>
-                <!--<label class="top">Location <select name="location">
+                <label class="top">Location <select name="location">
                         <option value="">Select Location</option>
                         <option value="payson">Payson</option>
                         <option value="orlando">Orlando</option>
                         <option value="hawaii">Hawaii</option>
                         <option value="san diego">San Diego</option>
-                </label>-->
-                <label class="top">Rooms <input type="number" name="rooms" required></label>
+                        </select>
+                </label>
+                <label class="top">Number of Rooms <input type="number" name="rooms" required></label>
+                <p>Type of Room:</p>
+                <label class="sbs"><input type="radio" name="danger" value="1-king">1 King Bed</label>
+                <label class="sbs"><input type="radio" name="danger" value="2-queen">2 Queen Beds</label>
+                <label class="sbs"><input type="radio" name="danger" value="2-room-suite">2 Room Suite</label>
+
                 <label class="top">Comments<textarea name="comments" rows="5" cols="30"></textarea></label>
             </fieldset>
             </div>
